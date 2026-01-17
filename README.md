@@ -64,6 +64,11 @@ source .venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
+### 4) Download the model
+```bash
+python download_model.py
+```
+
 ---
 
 ## 🚀 Usage
