@@ -22,7 +22,7 @@ This project loads a **fine-tuned diffusion model**, trained on a dataset of **A
 
 The model used in this project is located in: `fine_tuned_model`.
 
-It is a **fine-tuned version of `table-diffusion-v1-4`**, trained on a emoji dataset available on Kaggle [here](https://www.kaggle.com/datasets/subinium/emojiimage-dataset). During fine-tuning, only the U-Net weights (`pipeline.unet`) were updated.
+It is a **fine-tuned version of `stable-diffusion-v1-4`**, trained on a emoji dataset available on Kaggle [here](https://www.kaggle.com/datasets/subinium/emojiimage-dataset). During fine-tuning, only the U-Net weights (`pipeline.unet`) were updated.
 
 ### Dataset
 
