@@ -18,7 +18,7 @@ This project loads a **fine-tuned diffusion model**, trained on a dataset of **A
 
 ---
 
-## 🧠 Fine-Tuned Model
+## 🧠 Fine-tuned model
 
 The model used in this project is located in: `fine_tuned_model`.
 
