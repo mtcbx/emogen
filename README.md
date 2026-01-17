@@ -93,3 +93,9 @@ Go to: `http://127.0.0.1:5000`.
 `static/generated/generated_image.png`.
 
 Note that each new generation overwrites the previous 'generated_image.png'.
+
+---
+
+## 🖼️ Example generations
+
+![Examples](static/examples.png)
