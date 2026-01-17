@@ -1,6 +1,8 @@
 # Emogen
 
-## A simple Flask web app that generates Apple-like emoji images.
+## A simple Flask web app that generates Apple-like emoji images
+
+![Illustration](static/emogen-macbook.png)
 
 This project loads a **fine-tuned diffusion model**, trained on a dataset of **Apple emojis** that was augmented and preprocessed.
 
