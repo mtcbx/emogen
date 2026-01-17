@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emogen</title>
+    <script>
+        function showLoading() {
+            document.getElementById("loading").style.display = "flex";
+        }
+    </script>
+</head>
+
+<body class="index-page">
+    <h1>Emoji Generator</h1>
+
+    <form method="POST" class="prompt-form" onsubmit="showLoading()">
+        <input type="text" id="prompt" name="prompt" placeholder="Describe the emoji you want to generate..." required autocomplete="off" spellcheck="false">
+        <div class="button-container">
+            <button type="submit">Generate</button>
+        </div>
+    </form>
+
+    <h2>Generated emoji for "{{ prompt }}"</h2>
+    
+    <div class="generated-image">
+        <img src="/static/generated/{{ image_path }}" alt="Generated image">
+    </div>
+    {% endif %}
+
+    <div id="loading" class="loading-overlay">
+        <div class="organic-fluid"></div>
+        <p>Generation in progress...</p>      
+    </div>
+
+    <div class="gradient-container">
+        <div class="gradient"></div>
+        <div class="gradient"></div>
+        <div class="gradient"></div>
+    </div> 
+</body>
+</html>
