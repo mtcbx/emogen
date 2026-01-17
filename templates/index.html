@@ -23,7 +23,8 @@
     </form>
 
     <h2>Generated emoji for "{{ prompt }}"</h2>
-    
+
+    {% if image_path %}
     <div class="generated-image">
         <img src="/static/generated/{{ image_path }}" alt="Generated image">
     </div>
