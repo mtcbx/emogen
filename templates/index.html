@@ -13,7 +13,10 @@
 </head>
 
 <body class="index-page">
-    <h1>Emoji Generator</h1>
+    <h1 style="font-weight: 300;">
+        <strong style="font-weight: 1000;">Emo</strong>ji
+        <strong style="font-weight: 1000;">gen</strong>erator
+    </h1>
 
     <form method="POST" class="prompt-form" onsubmit="showLoading()">
         <input type="text" id="prompt" name="prompt" placeholder="Describe the emoji you want to generate..." required autocomplete="off" spellcheck="false">
@@ -22,9 +25,8 @@
         </div>
     </form>
 
-    <h2>Generated emoji for "{{ prompt }}"</h2>
-
     {% if image_path %}
+    <h2>Generated emoji for "{{ prompt }}"</h2>
     <div class="generated-image">
         <img src="/static/generated/{{ image_path }}" alt="Generated image">
     </div>
