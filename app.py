@@ -21,7 +21,7 @@ dtype = torch.float16 if device in ("cuda", "mps") else torch.float32
 if device == "mps":
     os.environ.setdefault("PYTORCH_ENABLE_MPS_FALLBACK", "1")
 
-model_path = "../fine_tuned_model"
+model_path = "fine_tuned_model"
 pipeline = StableDiffusionPipeline.from_pretrained(
     model_path,
     torch_dtype=dtype
